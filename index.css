@@ -1,7 +1,11 @@
 * {
 	margin: 0;
 	padding: 0;
-	transition: all 0.5s;
+	transition: all 0.3s;
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
 }
 
 body {
@@ -18,6 +22,15 @@ a:hover {
 	color: darkmagenta;
 }
 
+ol,
+ul {
+	list-style: none;
+}
+
+.text-color-gray {
+	color: rgb(175, 175, 175);
+}
+
 /* Header *************   */
 header {
 	width: 100%;
@@ -25,11 +38,18 @@ header {
 	align-items: center;
 	gap: 2rem;
 	justify-content: space-between;
-	padding: 1rem 0;
+	padding: 1.3rem 0;
 	border-bottom: 2px solid darkmagenta;
 }
+
+header .logo {
+	width: 13rem;
+}
+
 header nav a {
-	margin: 0 0.2rem;
+	margin: 0 0.1rem;
+	font-weight: bold;
+	color: rgb(147, 147, 147);
 }
 
 header .user-control-panel {
@@ -44,15 +64,16 @@ header .user-control-panel input {
 	padding: 0.2rem;
 	background-image: url(./assets/search.svg);
 	background-repeat: no-repeat;
-	background-position: 98%;
+	background-position: 97%;
 	background-size: 1rem;
-	padding-right: 2rem;
-	width: 6rem;
+	padding-right: 1.4rem;
+	width: 8rem;
 }
 
 header .user-control-panel i {
 	font-size: 1.5rem;
 	color: darkmagenta;
+	cursor: pointer;
 }
 
 i.fa-user {
@@ -64,4 +85,75 @@ i.fa-user {
 i.fa-user:hover {
 	color: white;
 	background-color: darkmagenta;
+}
+
+/* Main ****************   */
+
+main {
+	width: 98%;
+	border: 1px solid black;
+	aspect-ratio: 2/1;
+	margin: 0.5rem auto;
+	padding: 1rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 0.9rem;
+	justify-content: center;
+}
+
+.user-rating {
+	display: flex;
+	gap: 0.8rem;
+	align-items: center;
+}
+
+.user-rating > .stars > .fa-star {
+	color: darkmagenta;
+	font-size: 0.8rem;
+}
+
+.movie-rating {
+	border: 1px solid darkmagenta;
+	padding: 0 0.2rem;
+	border-radius: 0.3rem;
+}
+
+.duration {
+	font-weight: bold;
+}
+
+.description {
+	line-height: 1.3rem;
+}
+
+main > .details > ul > li {
+	margin-bottom: 0.2rem;
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+
+main > .details > ul > li > span {
+	color: darkmagenta;
+}
+
+.btn {
+	background-color: darkmagenta;
+	border: 2px solid darkmagenta;
+	color: white;
+	cursor: pointer;
+	transition: all 0.1s;
+}
+
+.btn:hover {
+	background-color: white;
+	color: darkmagenta;
+}
+
+.btn-large {
+	padding: 0.7rem 1.2rem;
+	border-radius: 0.5rem;
 }
