@@ -27,18 +27,12 @@ ul {
 	list-style: none;
 }
 
-section {
+section .container {
 	margin-bottom: 5rem;
 }
 
 .text-color-gray {
 	color: rgb(175, 175, 175);
-}
-
-.container {
-	width: 98%;
-	margin: auto;
-	margin-bottom: 1rem;
 }
 
 .btn {
@@ -65,9 +59,17 @@ section {
 	font-size: 0.8rem;
 }
 
+section {
+	width: 98%;
+	margin: auto;
+	margin-bottom: 3rem;
+}
+
 /* Header *************   */
 header {
-	width: 100%;
+	width: 98%;
+	margin: auto;
+	margin-bottom: 1rem;
 	display: flex;
 	align-items: center;
 	gap: 2rem;
@@ -124,12 +126,12 @@ i.fa-user:hover {
 /* Main ****************   */
 
 main {
+	width: 98%;
+	margin: auto;
+	margin-bottom: 2rem;
 	border: 1px solid black;
 	aspect-ratio: 2/1;
 	padding: 1rem;
-}
-
-main {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
@@ -202,4 +204,56 @@ main > .details > ul > li > span {
 	gap: 0.4rem;
 	aspect-ratio: 3/2;
 	font-size: 0.8rem;
+}
+
+/* footer *********************  */
+
+footer {
+	display: flex;
+	gap: 1rem;
+	align-items: flex-start;
+	width: 98%;
+	margin: auto;
+}
+
+footer div nav {
+	display: flex;
+	gap: 0.7rem;
+	margin-bottom: 0.7rem;
+	font-weight: bold;
+}
+
+footer div p {
+	line-height: 1.2rem;
+}
+
+.social div {
+	margin-top: 0.5rem;
+	display: flex;
+	gap: 0.4rem;
+}
+
+.social div i {
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.facebook {
+	color: rgb(84, 92, 214);
+}
+.youtube {
+	color: rgb(255, 55, 55);
+}
+.twitter {
+	color: rgb(0, 174, 255);
+}
+
+.apps div {
+	margin-top: 0.5rem;
+	display: flex;
+	gap: 0.5rem;
+}
+.apps div img {
+	width: 7rem;
+	cursor: pointer;
 }
