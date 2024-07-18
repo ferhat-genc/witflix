@@ -213,7 +213,8 @@ footer {
 	gap: 1rem;
 	align-items: flex-start;
 	width: 98%;
-	margin: auto;
+	margin: 1rem auto;
+	padding: 0.5rem;
 }
 
 footer div nav {
@@ -251,9 +252,46 @@ footer div p {
 .apps div {
 	margin-top: 0.5rem;
 	display: flex;
+	flex-direction: column;
 	gap: 0.5rem;
 }
 .apps div img {
 	width: 7rem;
 	cursor: pointer;
+}
+
+/* mobile ************ */
+
+@media screen and (max-width: 730px) {
+	/* header */
+	header {
+		flex-wrap: wrap;
+	}
+
+	header nav {
+		order: 3;
+		width: 100%;
+		text-align: center;
+	}
+
+	/* footer */
+	footer {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+	}
+	footer > div:first-child p {
+		text-align: center;
+	}
+	footer > div:first-child {
+		width: 100%;
+	}
+	footer nav {
+		justify-content: center;
+	}
+
+	.apps div {
+		flex-direction: row;
+	}
 }
