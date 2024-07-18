@@ -27,8 +27,42 @@ ul {
 	list-style: none;
 }
 
+section {
+	margin-bottom: 5rem;
+}
+
 .text-color-gray {
 	color: rgb(175, 175, 175);
+}
+
+.container {
+	width: 98%;
+	margin: auto;
+	margin-bottom: 1rem;
+}
+
+.btn {
+	background-color: darkmagenta;
+	border: 2px solid darkmagenta;
+	color: white;
+	cursor: pointer;
+	transition: all 0.1s;
+}
+
+.btn:hover {
+	background-color: white;
+	color: darkmagenta;
+}
+
+.btn-large {
+	padding: 0.7rem 1.2rem;
+	border-radius: 0.5rem;
+}
+
+.btn-md {
+	padding: 0.4rem 0.8rem;
+	border-radius: 0.5rem;
+	font-size: 0.8rem;
 }
 
 /* Header *************   */
@@ -90,10 +124,8 @@ i.fa-user:hover {
 /* Main ****************   */
 
 main {
-	width: 98%;
 	border: 1px solid black;
 	aspect-ratio: 2/1;
-	margin: 0.5rem auto;
 	padding: 1rem;
 }
 
@@ -128,6 +160,7 @@ main {
 
 .description {
 	line-height: 1.3rem;
+	max-width: 75%;
 }
 
 main > .details > ul > li {
@@ -140,20 +173,33 @@ main > .details > ul > li > span {
 	color: darkmagenta;
 }
 
-.btn {
-	background-color: darkmagenta;
-	border: 2px solid darkmagenta;
-	color: white;
-	cursor: pointer;
-	transition: all 0.1s;
+/* Section Recomended for you *********** */
+.movie-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+}
+.movie-header > h2,
+.movie-header > p {
+	font-size: 0.9rem;
+	font-weight: bold;
 }
 
-.btn:hover {
-	background-color: white;
-	color: darkmagenta;
+.movie-container {
+	display: flex;
+	justify-content: space-between;
 }
 
-.btn-large {
-	padding: 0.7rem 1.2rem;
-	border-radius: 0.5rem;
+.movie-card {
+	border: 1px solid darkmagenta;
+	width: 32%;
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 0.4rem;
+	aspect-ratio: 3/2;
+	font-size: 0.8rem;
 }
