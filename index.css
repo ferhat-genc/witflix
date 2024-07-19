@@ -27,10 +27,6 @@ ul {
 	list-style: none;
 }
 
-section .container {
-	margin-bottom: 5rem;
-}
-
 .text-color-gray {
 	color: rgb(175, 175, 175);
 }
